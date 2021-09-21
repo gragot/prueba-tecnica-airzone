@@ -16,3 +16,20 @@ b. Se da a entender que un comentario solo puede pertenecer a un post pero la re
 * PHP: 7.4.1
 * Laravel: 8.61.0
 * MariaDB: 10.4.12
+
+# Instrucciones
+
+Se ha configura docker con las versiones de php y mariadb indicadas en el dump de phpMyAdmin
+
+_NOTA: Es necesario tener docker y composer instalado para seguir estas instrucciones_
+
+1. Ejecutamos "docker-compose up" en la raíz del proyecto para levantar los contenedores de docker  
+2. Nos conectamos al contender de mysql y creamos el esquema "airzone"
+3. Ejecutamos el script "database/scripts/prueba_incorporacion.sql" en esquema "airzone" que acabamos de crear 
+4. En el directorio raíz del proyecto ejecutamos:
+
+```
+composer install
+cp .env.example .env
+php artisan key:generate
+```
