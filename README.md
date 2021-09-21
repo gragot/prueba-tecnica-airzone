@@ -23,10 +23,11 @@ Se ha configura docker con las versiones de php y mariadb indicadas en el dump d
 
 _NOTA: Es necesario tener docker y composer instalado para seguir estas instrucciones_
 
-1. Ejecutamos "docker-compose up" en la raíz del proyecto para levantar los contenedores de docker  
-2. Nos conectamos al contender de mysql y creamos el esquema "airzone"
-3. Ejecutamos el script "database/scripts/prueba_incorporacion.sql" en esquema "airzone" que acabamos de crear 
-4. En el directorio raíz del proyecto ejecutamos:
+1. Clonamos el repositorio git@github.com:gragot/prueba-tecnica-airzone.git
+2. Ejecutamos "docker-compose up" en la raíz del proyecto para levantar los contenedores de docker  
+3. Nos conectamos al contender de mysql y creamos el esquema "airzone"
+4. Ejecutamos el script "database/scripts/prueba_incorporacion.sql" en el esquema "airzone" que acabamos de crear 
+5. En el directorio raíz del proyecto ejecutamos:
 
 ```
 composer install
