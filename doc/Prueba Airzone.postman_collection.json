@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "90ef9b76-edd7-4313-8320-93386f931e43",
+		"name": "Prueba Airzone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:84/api/categoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "84",
+							"path": [
+								"api",
+								"categoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "parent_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Nueva categoría",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "nueva_categoria",
+									"type": "text"
+								},
+								{
+									"key": "visible",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:84/api/categoria/store",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "84",
+							"path": [
+								"api",
+								"categoria",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cambio de nombre",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:84/api/categoria/3/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "84",
+							"path": [
+								"api",
+								"categoria",
+								"3",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:84/api/categoria/3/destroy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "84",
+							"path": [
+								"api",
+								"categoria",
+								"3",
+								"destroy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:84/api/post/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
